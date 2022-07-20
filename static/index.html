@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Go WebAssembly</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="wasm_exec.js" defer></script>
+	<script src="wasm.js" defer></script>
+</head>
+
+<body>
+	<h1>WebAssembly</h1>
+	<textarea id="rego" name="rego" rows="10" cols="80">
+package play
+
+import future.keywords
+
+foo := "bar" if every x in [1, 2, 3] { x > 0 }
+	</textarea>
+	<textarea id="result" name="result" rows="10" cols="80"/>
+	</textarea>
+	<textarea id="error" name="error" rows="10" cols="80"/>
+	</textarea>
+</body>
+</html>
