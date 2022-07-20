@@ -13,8 +13,8 @@ func main() {
 func update() {
 	document := js.Global().Get("document")
 	document.Call("getElementById", "error").Set("value", "error goes here") // debug startup
-	aStr := document.Call("getElementById", "rego").Get("value").String()
-	x, err := ast.ParseModule("policy.rego", aStr)
+	a := document.Call("getElementById", "rego").Get("value").String()
+	x, err := ast.ParseModule("policy.rego", a)
 	if err != nil {
 		document.Call("getElementById", "error").Set("value", err.Error())
 		return

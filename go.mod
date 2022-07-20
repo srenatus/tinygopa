@@ -21,3 +21,6 @@ replace github.com/rcrowley/go-metrics => ./replacements/github.com/rcrowley/go-
 replace gopkg.in/yaml.v2 => ./replacements/gopkg.in/yaml.v2
 
 replace github.com/ghodss/yaml => ./replacements/github.com/ghodss/yaml
+
+// TODO: adjust to your location of `sr/experiment/tinygo-parser` branch of `github.com/srenatus/opa`
+replace github.com/open-policy-agent/opa => /Users/stephan/Sources/open-policy-agent/opa-main
